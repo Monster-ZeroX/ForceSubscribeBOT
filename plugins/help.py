@@ -8,7 +8,7 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, Usern
 UPDATES_CHANNEL = C.UPDATES_CHANNEL
 logging.basicConfig(level=logging.INFO)
 
-@Client.on_message(filters.incoming & filters.command(['start', 'start@Forcesubtele_xobot']))
+@Client.on_message(filters.incoming & filters.command(['start', 'start@FZForceSubscribeBot']))
 def _start(client, message):
     update_channel = UPDATES_CHANNEL
     if update_channel:
@@ -17,7 +17,7 @@ def _start(client, message):
             if user.status == "kicked":
                client.send_message(
                    chat_id=message.chat.id,
-                   text="Sorry, You are Banned to use me. Contact my [Support Group](https://t.me/BHZBot_Support).",
+                   text="Sorry, You are Banned to use me. Contact my [Owner](https://t.me/FZConnectBot).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -42,8 +42,8 @@ def _start(client, message):
 	        reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                           InlineKeyboardButton("Join Updates Channel", url="https://t.me/BioHazard_Bots"),
-                           InlineKeyboardButton("Support Group", url="https://t.me/BHZBot_Support")
+                           InlineKeyboardButton("Join Updates Channel", url="https://t.me/FZBOTS"),
+                           InlineKeyboardButton("Support", url="https://t.me/FZConnectBot")
                       ],
 
                   ]
@@ -57,8 +57,8 @@ def _start(client, message):
 	reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/BioHazard_Bots"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/BHZBot_Support")
+                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/FZBOTS"),
+                    InlineKeyboardButton("Support Group", url="https://t.me/FZConnectBot")
                 ],
             ]
         ),
@@ -74,14 +74,11 @@ def _source_code(client, message):
 	reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Creator", url="https://t.me/Avrazel")
+                    InlineKeyboardButton("Creator", url="https://t.me/Monster_ZeroX")
                 ],
                 [
-                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/BioHazard_Bots"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/BHZBot_Support")
-                ],
-                [
-                    InlineKeyboardButton("Creator", url="https://t.me/Avrazel")
+                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/FZBOTS"),
+                    InlineKeyboardButton("Support", url="https://t.me/FZConnectBot")
                 ]
             ]
         ),
@@ -98,7 +95,7 @@ def _help(client, message):
             if user.status == "kicked":
                client.send_message(
                    chat_id=message.chat.id,
-                   text="Sorry, You are Banned to use me. Contact my [Support Group](https://t.me/BHZBot_Support).",
+                   text="Sorry, You are Banned to use me. Contact my [Owner](https://t.me/FZConnectBot).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -120,7 +117,7 @@ def _help(client, message):
         except Exception:
             client.send_message(
                 chat_id=message.chat.id,
-                text="Hey use this command in my pm. \nFor more help ask in my [Support Group](https://t.me/BHZBot_Support).",
+                text="Hey use this command in my pm. \nFor more help ask in my [Owner](https://t.me/FZConnectBot).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return

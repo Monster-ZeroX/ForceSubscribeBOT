@@ -4,16 +4,16 @@
 ## Deploy
 
 ### Deploy To Heroku Now:
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Rexinazor/ForceSubscribeBOT)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Monster-ZeroX/ForceSubscribeBOT)
 
 ### Deploy in vps
 - Clone this repo
 ```
-git clone https://github.com/Rexinazor/ForceSubscribeBOT
+git clone https://github.com/Monster-ZeroX/ForceSubscribeBOT
 ```
 - Change directory
 ```
-cd ForceSub_Bot
+cd ForceSubscribeBOT
 ```
 - Install requirements
 ```
